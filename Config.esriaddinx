@@ -1,0 +1,20 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>createDigitizingTemplate</Name>
+  <AddInID>{bf05d974-939f-4dc8-b5f2-e19c01e0a1f8}</AddInID>
+  <Description>Creates digitizing templates based on selected features.</Description>
+  <Version>2.0</Version>
+  <Image>Images\template.png</Image>
+  <Author>Jim Chappell</Author>
+  <Company>National Park Service</Company>
+  <Date>10/02/2019</Date>
+  <Targets>
+    <Target name="Desktop" version="10.6" />
+  </Targets>
+  <AddIn language="CLR" library="createDigitizingTemplate.dll" namespace="createDigitizingTemplate">
+    <ArcMap>
+      <Commands>
+        <Button id="National_Park_Service_createDigitizingTemplate_createTemplate" class="createTemplate" message="Creates digitizing templates from selected attributed features." caption="Create digitizing template" tip="Select attributed features and run to create templates" category="GRI Creation Tools" image="Images\template.png" />
+      </Commands>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>
